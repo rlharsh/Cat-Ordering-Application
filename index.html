@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+    
+    <title>YANCLAN Resaurant</title>
+  </head>
+  <body>
+
+    <main id="menu-container" class="container menu-container">
+        <div id="black-out" class="black-out"></div>
+
+        <div id="information-modal" class="information-modal">
+            <div class="modal-grid">
+
+
+                <img id="modal-image" class="modal__grid__image modal_image" src="./assets/images/food/chow-mein.jpeg" alt="">
+
+                <div class="modal__grid__information">
+                    <div class="modal__grid__information__inner__container">
+                        <h1 id="modal-name" class="section-header modal--header"><i class="fas fa-utensils"></i>
+                            Chow Mein
+                        </h1>
+                        <div class="card__details__line"></div>
+                        <h3>
+                            <i class="fa-solid fa-circle-info"></i> About
+                        </h3>
+                        <p id="modal-description">
+
+                        </p>
+                        <h3>
+                            <i class="fa-solid fa-plate-wheat"></i> Ingredients:
+                        </h3>
+                        <p id="modal-ingredients">beef, pork, other various shit</p>
+                    </div>
+                    <div class="modal-price-container">
+                        <p id="modal-price" class="card__details__price">$5.99</p>
+                    </div>
+                    <button id="modal-button" class="btn btn--modal"><i class="fa-solid fa-plus"></i> Add to Order</button>
+                </div>
+            </div>
+        </div>
+            
+        <div class="sidebar">
+
+            <div class="sidebar-menu">
+                <input type="checkbox" id="cart">
+                <span class="fa fa-shopping-cart"></span>
+                <label for="cart" class="label-cart"></label>
+                <a id="cart-a" href="#">My Cart</a>
+            </div>
+    
+            <div class="sidebar-menu">
+                <span class="fas fa-search"></span>
+                <a href="#">Search</a>
+            </div>
+            <div class="sidebar-menu">
+                <span class="fas fa-home"></span>
+                <a href="#">Home</a>
+            </div>
+            <div class="sidebar-menu">
+                <span class="fas fa-heart"></span>
+                <a href="#">Favoritres</a>
+            </div>
+            <div class="sidebar-menu">
+                <span class="fas fa-user"></span>
+                <a href="#">Profile</a>
+            </div>
+            <div class="sidebar-menu">
+                <span class="fas fa-sliders-h"></span>
+                <a href="#">Settings</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="dashboard-banner">
+            <img src="./assets/images/food/feature-header.jpg" alt="test" class="dashboard--banner--filter">
+            <div class="dashboard__banner__promotion">
+                <h1>
+                    <span>
+                        25% OFF
+                    </span>
+                Use Coupon Code #25FORME
+                </h1>
+            </div>
+        </div>
+
+        <div id="suggestion-container" class="suggestion-container">
+            <h3 class="suggestion-title">
+                Suggested Food for You
+            </h3>
+            <div class="suggestion-tile-list">
+                <a class="suggestion-tile" href="#"><i class="fa-solid fa-cow"></i> Beef</a>
+                <a class="suggestion-tile" href="#"><i class="fa-solid fa-drumstick-bite"></i> Chicken</a>
+                <a class="suggestion-tile" href="#"><i class="fa-solid fa-fish"></i> Seafood</a>
+            </div>
+        </div>
+
+        <h1 class="section-header"><i class="fas fa-bowl-food"></i> Appetizers</h1>
+        <div class="card__details__line card--details--line--header"></div>
+        <div id="appetizer-container" class="menu-content-container">
+        
+
+
+        </div>
+
+        <h1 class="section-header"><i class="fas fa-utensils"></i> Entrée</h1>
+        <div class="card__details__line card--details--line--header"></div>
+        <div id="entree-container" class="menu-content-container">
+        
+
+
+        </div>
+        
+        <h1 class="section-header"><i class="fas fa-ice-cream"></i> Desserts</h1>
+        <div class="card__details__line card--details--line--header"></div>
+        <div id="dessert-container" class="menu-content-container">
+        
+
+
+        </div>
+        
+
+        <div id="dashboard-order" class="dashboard-order">
+            <h3 class="dashboard__order__header">
+                Order Summary
+            </h3>
+            <p>
+                Delivery Address
+            </p>
+            <p class="dashboard__order__address">
+                2127 Ellis St Apt: C<br>Stevens Point, WI 54481
+            </p>
+            <p class="dashboard__order__time__slugs"><i class="fa fa-clock"></i> 30 mins <i class="fa fa-location-pin"></i> 2 miles </p>
+            <div id="order-summary-items" class="order-summary-items">
+                
+                
+
+            </div>
+            <div class="card__details__line"></div>
+
+            <div class="order__total__summary">
+                <div class="order__total__texts">
+                    <p>Subtotal</p>
+                    <p>Delivery Fee</p>
+                    <p>Taxes (10%)</p>
+                </div>
+                <div class="order__total__values">
+                    <p id="subtotal">
+                        0.00
+                    </p>
+                    <p id="delivery-fee">
+                        0.00
+                    </p>
+                    <p id="taxes">
+                        0.00
+                    </p>
+                </div>
+            </div>
+            <div class="order__coupon__container">
+                <label>
+                    <input class="order__coupon__input" type="text" name="customer-coupon" id="customer-coupon-code">
+                    <button class="order__coupon__button">Apply Coupon</button>
+                </label>
+            </div>
+            <button id="order-button" class="btn btn--order">
+                Place Order
+            </button>
+        </div>
+    </main>
+    <script src="./assets/js/cart.js"></script>
+    <script src="./assets/js/handler.js" type="module"></script>
+  </body>
+</html>
