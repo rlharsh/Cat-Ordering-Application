@@ -479,7 +479,7 @@ function addItemToCart(val) {
     itemHeader.textContent = item.name
 
     orderSummary.appendChild(itemHeader)
-
+    
     let itemp = document.createElement('p')
 
     let xSpan = document.createElement('span')
